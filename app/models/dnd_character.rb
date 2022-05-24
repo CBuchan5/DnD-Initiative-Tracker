@@ -1,0 +1,2 @@
+class DndCharacter < ApplicationRecord
+end
