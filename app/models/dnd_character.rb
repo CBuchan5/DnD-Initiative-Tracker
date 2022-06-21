@@ -1,2 +1,0 @@
-class DndCharacter < ApplicationRecord
-end
