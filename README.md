@@ -1,6 +1,8 @@
 # DnD-Initiative-Tracker
 A program to assist all Dungeons and Dragons DM’s in keeping track of characters during combat.
 
+This repo has gone through a few changes since being created. Originaly created using Ruby on Rails in an attempt to get familliar with the stack, it was soon returned to MERN to consolidate knowledge gained from the Makers course in a stack I am familliar with. 
+
 ## MVP
 
 ```
