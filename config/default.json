@@ -1,4 +1,4 @@
 {
     "mongoURI":
-      "mongodb+srv://cbuchan:qVn307hKmUmCX3pr@dndtracker.n9vacvp.mongodb.net/?retryWrites=true&w=majority"
+      "mongodb+srv://<db-username>:<password>@tracker.3qip1o6.mongodb.net/<dbname>?retryWrites=true&w=majority"
   }
