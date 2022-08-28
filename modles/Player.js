@@ -6,11 +6,11 @@ const PlayerSchema = new mongoose.Schema({
     required: true
   },
   initiative: {
-    type: Integer,
+    type: Number,
     required: true
   },
   hit_points: {
-    type: Integer,
+    type: Number,
     required: true
   },
   description: {
