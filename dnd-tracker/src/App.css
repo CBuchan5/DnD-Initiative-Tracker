@@ -1,0 +1,26 @@
+.App-header {
+  background-color: #a57f46;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+
+.CreatePlayer {
+    background-color: #a57f46;
+    min-height: 100vh;
+    color: rgb(0,0,0);
+  }
+
+  .ShowPlayerList {
+    background-color: #a57f46;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100px;
+    color: rgb(73, 42, 0);
+  }
