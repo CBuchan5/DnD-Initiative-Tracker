@@ -29,14 +29,14 @@ function ShowPlayerList() {
       <div className='container'>
         <div className='row'>
           <div className='col-md-12'>
-            <br />
+            
             <h2 className='display-4 text-center'>Players List</h2>
           </div>
          
           <div className='col-md-11'>
             <Link
               to='/create-player'
-              className='btn btn-outline-warning float-right'
+              className='btn btn-outline-warning float-center'
             >
               
              + Add New Player
@@ -46,7 +46,6 @@ function ShowPlayerList() {
             <hr />
           </div>
         </div>
-
         <div className='list'>{playerList}</div>
       </div>
     </div>

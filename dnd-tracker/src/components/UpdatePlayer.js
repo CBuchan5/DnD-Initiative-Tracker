@@ -69,7 +69,7 @@ function UpdatePlayer(props) {
             <p className='lead text-center'>Update Player's Info</p>
           </div>
         </div>
-        // just for a change
+
         <div className='col-md-8 m-auto'>
           <form noValidate onSubmit={onSubmit}>
             <div className='form-group'>

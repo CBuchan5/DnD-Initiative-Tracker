@@ -18,7 +18,7 @@ const PlayerPicture = (props) => {
         </h2>
         <h3>{player.initiative}</h3>
         <h3>{player.hit_points}</h3>
-        <p>{player.description}</p>
+        <h3>{player.description}</h3>
       </div>
     </div>
   );

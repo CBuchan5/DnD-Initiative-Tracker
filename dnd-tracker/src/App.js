@@ -15,7 +15,7 @@ class App extends Component {
         <Routes>
         <Route exact path='/' element={<ShowPlayerList />} />
           <Route path='/create-player' element={<CreatePlayer />} />
-          <Route path='/update-player/:id' element={<UpdatePlayer />} />
+          <Route path='/edit-player/:id' element={<UpdatePlayer />} />
           <Route path='/show-player/:id' element={<ShowPlayerDetails />} />
        </Routes>
        </div>

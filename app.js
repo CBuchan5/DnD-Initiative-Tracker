@@ -2,10 +2,11 @@ const express = require('express');
 const connectDB = require('./config/db');
 const players = require('./routes/api/players');
 const app = express();
+const cors = require('cors');
 
 // Connect Database
 connectDB();
-
+app.use(cors({ origin: true, credentials: true }));
 app.get('/', (req, res) => res.send('Hello world!'));
 app.use('/api/players', players);
 
