@@ -2,6 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
+router.use(express.json());
 
 // Load Player model
 const Player = require('../../modles/Player');
@@ -28,13 +29,13 @@ router.get('/:id', (req, res) => {
     .catch(err => res.status(404).json({ noplayerfound: 'No player found' }));
 });
 
-// @route GET api/characters
+// @route GET api/characters/
 // @description add/save player
 // @access Public
 router.post('/', (req, res) => {
   Player.create(req.body)
     .then(player => res.json({ msg: 'Player added successfully' }))
-    .catch(err => res.status(400).json({ error: 'Unable to add this player' }));
+    .catch(err => console.trace({ err }) && res.status(400).json({ error: 'Unable to add this player' }));
 });
 
 // @route GET api/characters/:id
