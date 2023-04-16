@@ -35,7 +35,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   Player.create(req.body)
     .then(player => res.json({ msg: 'Player added successfully' }))
-    .catch(err => console.trace({ err }) && res.status(400).json({ error: 'Unable to add this player' }));
+    .catch(err => res.status(400).json({ error: 'Unable to add this player' }));
 });
 
 // @route GET api/characters/:id
