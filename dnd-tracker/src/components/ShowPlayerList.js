@@ -21,9 +21,8 @@ function ShowPlayerList() {
   const playerList =
     players.length === 0
       ? 'there is no player record!'
-      : players.map((player, k) => <PlayerPicture player={player} key={k} />);
+      : players.sort((a,b) => b.initiative - a.initiative).map((player, k) => <PlayerPicture player={player} key={k}/>);
       
-
   return (
     <div className='ShowPlayerList'>
       <div className='container'>
