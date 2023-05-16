@@ -6,6 +6,7 @@ import '../App.css';
 function UpdatePlayer(props) {
   const [player, setPlayer] = useState({
     name: '',
+    imgUrl: '',
     initiative: '',
     hit_points: '',
     description: '',
@@ -19,7 +20,9 @@ function UpdatePlayer(props) {
       .get(`http://localhost:8082/api/players/${id}`)
       .then((res) => {
         setPlayer({
+          
           name: res.data.name,
+          imgUrl: res.data.imgUrl,
           initiative: res.data.initiative,
           hit_points: res.data.hit_points,
           description: res.data.description,
@@ -38,7 +41,9 @@ function UpdatePlayer(props) {
     e.preventDefault();
 
     const data = {
+      
       name: player.name,
+      imgUrl: player.imgUrl,
       initiative: player.initiative,
       hit_points: player.hit_points,
       description: player.description,
@@ -84,7 +89,18 @@ function UpdatePlayer(props) {
               />
             </div>
             <br />
-
+            <div className='form-group'>
+              <label htmlFor='link'>ImgUrl</label>
+              <input
+                type='text'
+                placeholder='Image of Player'
+                name='imgUrl'
+                className='form-control'
+                value={player.imgUrl}
+                onChange={onChange}
+              />
+            </div>
+            <br />
             <div className='form-group'>
               <label htmlFor='isbn'>Initiative</label>
               <input

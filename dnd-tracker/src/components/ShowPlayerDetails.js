@@ -33,6 +33,10 @@ function ShowPlayerDetails(props) {
     <div>
       <table className='table table-hover table-dark'>
         <tbody>
+        <tr>
+            <td>Image Url</td>
+            <td>{players.imgUrl}</td>
+          </tr>
           <tr>
             <td>Name</td>
             <td>{players.name}</td>

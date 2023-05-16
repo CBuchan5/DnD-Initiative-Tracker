@@ -8,9 +8,10 @@ const PlayerPicture = (props) => {
   return (
     <div className='card-container'>
       <img
-        src='https://images.unsplash.com/photo-1495446815901-a7297e633e8d'
+        src= {player.imgUrl}
         alt='Players'
         height={200}
+       
       />
       <div className='desc'>
         <h2>
