@@ -8,7 +8,9 @@ const CreatePlayer = (props) => {
   // Define the state with useState hook
   const navigate = useNavigate();
   const [player, setPlayer] = useState({
+    
     name: '',
+    imgUrl: '',
     initiative: '',
     hit_points: '',
     description: ''
@@ -24,7 +26,9 @@ const CreatePlayer = (props) => {
       .post('http://localhost:8082/api/players', player)
       .then((res) => {
         setPlayer({
+          
           name: '',
+          imgUrl: '',
           initiative: '',
           hit_points: '',
           description: ''
@@ -60,6 +64,17 @@ const CreatePlayer = (props) => {
                   name='name'
                   className='form-control'
                   value={player.name}
+                  onChange={onChange}
+                />
+              </div>
+
+              <div className='form-group'>
+                <input
+                  type='text'
+                  placeholder='Image url'
+                  name='imgUrl'
+                  className='form-control'
+                  value={player.imgUrl}
                   onChange={onChange}
                 />
               </div>

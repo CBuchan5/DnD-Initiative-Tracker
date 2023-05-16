@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
 const PlayerSchema = new mongoose.Schema({
+  imgUrl: {
+    type: String
+  },
   name: {
     type: String,
     required: true
