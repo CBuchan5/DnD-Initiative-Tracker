@@ -64,13 +64,13 @@ function ShowPlayerDetails(props) {
           <div className='col-md-10 m-auto'>
             <br /> <br />
             <Link to='/' className='btn btn-outline-warning float-left'>
-              Show Player List
+              Show Character List
             </Link>
           </div>
           <br />
           <div className='col-md-8 m-auto'>
-            <h1 className='display-4 text-center'>Player's Record</h1>
-            <p className='lead text-center'>View Player's Info</p>
+            <h1 className='display-4 text-center'>Character's Record</h1>
+            <p className='lead text-center'>View Character's Info</p>
             <hr /> <br />
           </div>
           <div className='col-md-10 m-auto'>{PlayerItem}</div>
@@ -82,7 +82,7 @@ function ShowPlayerDetails(props) {
                 onDeleteClick(players._id);
               }}
             >
-              Delete Player
+              Delete Character
             </button>
           </div>
           <div className='col-md-6 m-auto'>
@@ -91,7 +91,7 @@ function ShowPlayerDetails(props) {
               className='btn btn-outline-info btn-lg btn-block'
             >
              
-              Edit Player
+              Edit Character
             </Link>
           </div>
         </div>
