@@ -17,9 +17,9 @@ const PlayerPicture = (props) => {
         <h2>
           <Link to={`/show-player/${player._id}`}>{player.name}</Link>
         </h2>
-        <h3>{player.initiative}</h3>
-        <h3>{player.hit_points}</h3>
-        <h3>{player.description}</h3>
+        <h3>Initiative: {player.initiative}</h3>
+        <h3>Hit Points: {player.hit_points}</h3>
+        <h3>Description: {player.description}</h3>
       </div>
     </div>
   );

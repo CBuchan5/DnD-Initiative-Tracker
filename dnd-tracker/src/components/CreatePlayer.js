@@ -49,12 +49,12 @@ const CreatePlayer = (props) => {
           <div className='col-md-8 m-auto'>
             <br />
             <Link to='/' className='btn btn-outline-warning float-left'>
-              Show Player List
+              Show Character List
             </Link>
           </div>
           <div className='col-md-8 m-auto'>
-            <h1 className='display-4 text-center'>Add Player</h1>
-            <p className='lead text-center'>Create new player</p>
+            <h1 className='display-4 text-center'>Add Character</h1>
+            <p className='lead text-center'>Create new character</p>
 
             <form noValidate onSubmit={onSubmit}>
               <div className='form-group'>

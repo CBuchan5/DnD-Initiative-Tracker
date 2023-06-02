@@ -29,7 +29,7 @@ function ShowPlayerList() {
         <div className='row'>
           <div className='col-md-12'>
             
-            <h2 className='display-4 text-center'>Players List</h2>
+            <h3 className='display-4 text-center'>Initiative Tracker</h3>
           </div>
          
           <div className='col-md-11'>
@@ -38,7 +38,7 @@ function ShowPlayerList() {
               className='btn btn-outline-warning float-center'
             >
               
-             + Add New Player
+             + Add New Character
             </Link>
             <br />
             <br />
