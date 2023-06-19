@@ -1,5 +1,5 @@
 const express = require('express');
-const connectDB = require('./config/db').default;
+const connectDB = require('./config/db');
 const players = require('./routes/api/players');
 const app = express();
 const cors = require('cors');
