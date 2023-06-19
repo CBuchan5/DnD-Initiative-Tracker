@@ -1,10 +1,11 @@
-const mongoose = require('mongoose');
-const config = require('config');
-const db = config.get('mongoURI');
+require("dotenv").config();
+import { connect } from 'mongoose';
+import { get } from 'config';
+const db = get('mongoURI');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(
+    await connect(
       db,
       {
         useNewUrlParser: true,
@@ -19,4 +20,4 @@ const connectDB = async () => {
   }
 };
 
-module.exports = connectDB;
+export default connectDB;
