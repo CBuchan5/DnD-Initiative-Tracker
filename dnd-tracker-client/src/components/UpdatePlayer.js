@@ -50,7 +50,7 @@ function UpdatePlayer(props) {
     };
 
     axios
-      .put(`http://localhost:8082/api/players/${id}`, data)
+      .put(`https://dnd-tracker.onrender.com/api/players/${id}`, data)
       .then((res) => {
         navigate(`/show-player/${id}`);
       })
