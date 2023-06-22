@@ -23,7 +23,7 @@ const CreatePlayer = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:8082/api/players', player)
+      .post('https://dnd-tracker.onrender.com/api/players', player)
       .then((res) => {
         setPlayer({
           

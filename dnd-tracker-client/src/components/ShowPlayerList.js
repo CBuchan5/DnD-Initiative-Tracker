@@ -9,7 +9,7 @@ function ShowPlayerList() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8082/api/players')
+      .get('https://dnd-tracker.onrender.com/api/players')
       .then((res) => {
         setPlayers(res.data);
       })

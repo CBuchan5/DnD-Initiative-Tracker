@@ -17,7 +17,7 @@ function UpdatePlayer(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8082/api/players/${id}`)
+      .get(`https://dnd-tracker.onrender.com/api/players/${id}`)
       .then((res) => {
         setPlayer({
           

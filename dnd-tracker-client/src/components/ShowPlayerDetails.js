@@ -10,7 +10,7 @@ function ShowPlayerDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8082/api/players/${id}`)
+      .get(`https://dnd-tracker.onrender.com/api/players/${id}`)
       .then((res) => {
         setPlayer(res.data);
       })
@@ -20,7 +20,7 @@ function ShowPlayerDetails(props) {
   }, [id]);
   const onDeleteClick = (id) => {
     axios
-      .delete(`http://localhost:8082/api/players/${id}`)
+      .delete(`https://dnd-tracker.onrender.com/api/players/${id}`)
       .then((res) => {
         navigate('/');
       })
